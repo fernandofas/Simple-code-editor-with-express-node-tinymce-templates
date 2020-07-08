@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width:768px) {
+  .col-1 {
+    width: 8.33%
+  }
+
+  .col-2 {
+    width: 16.66%
+  }
+
+  .col-3 {
+    width: 25%
+  }
+
+  .col-4 {
+    width: 33.33%
+  }
+
+  .col-5 {
+    width: 41.66%
+  }
+
+  .col-6 {
+    width: 50%
+  }
+
+  .col-7 {
+    width: 58.33%
+  }
+
+  .col-8 {
+    width: 66.66%
+  }
+
+  .col-9 {
+    width: 75%
+  }
+
+  .col-10 {
+    width: 83.33%
+  }
+
+  .col-11 {
+    width: 91.66%
+  }
+
+  .col-12 {
+    width: 100%
+  }
+}
+
+input {
+  background: #fff;
+  color: #000;
+}
+
+.theBut {
+  background-color: #008ee0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin: 25px 25px 0 0;
+  border-radius: 10px;
+  border-color: transparent !important;
+  float: right;
+}
+
+.theBut:hover {
+  background-color: #6fcc5d;
+  color: #535353;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border-color: transparent !important;
+}
+
+.theBut-toggle {
+  background-color: #008ee0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin: 25px 25px 0 0;
+  border-radius: 10px;
+  border-color: transparent !important;
+}
+
+.theBut-toggle:hover {
+  background-color: #6fcc5d;
+  color: #535353;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border-color: transparent !important;
+}
+
+body {
+  background-color: #ececec;
+  color: #000;
+  font-family: "Ubuntu Mono", "Lucida Console", monospace;
+  font-size: 16px;
+}
+
+img.topImage {
+  max-width: 150px;
+  float: left;
+}
+
+body a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: white;
+  background: black;
+}
+
+.section {
+  padding: 5px;
+}
+
+.hidden {
+  visibility: hidden !important;
+  display: none !important;
+}
+
+.visible {
+  visibility: visible !important;
+  display: block !important;
+}
+
+.consoleText {
+  color: #000;
+  font-family: "Ubuntu Mono", "Lucida Console", monospace;
+  border: 1px solid #CCC;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+
+.cssType {
+  color: #000;
+  line-height: 1.5;
+  font-family: "Ubuntu Mono", "Lucida Console", monospace;
+  border-radius: 9px;
+  width: 90%;
+  font-size: 16px;
+}
+
+iframe {
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+}
+
+.tox:not([dir=rtl]) .tox-statusbar__branding {
+  margin-left: 1ch;
+  display: none !important;
+}
+
+.navbar-brand:hover {
+  background-color: transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #535353;
+  background-color: transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(180, 180, 180, .3);
+  font-size: 1.5em;
+}

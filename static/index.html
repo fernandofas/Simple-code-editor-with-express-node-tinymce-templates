@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <meta charset="UTF-8">
+    <title>Html creator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.tiny.cloud/1/0zf94pz1zt9425lxa8ajr1m1jhi8dh8u8eyryzpllclfl4x0/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin" />
+    </script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <h1>Create stuff</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" id="quest" href="https://stackoverflow.com" title="Got a question?" target="_blank"><i class="fa fa-question"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="quest" href="https://www.litmus.com" title="Test you remail" target="_blank"><i class="fa fa-laptop"
+                            aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="about" href="https://www.fernandofas.com" title="About me" target="_blank"><i class="fa fa-beer"
+                            aria-hidden="true"></i> </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header ends here -->
+
+    <!-- Content stuff-->
+    <div class="col-md-12">
+        <input type='button' value='TinyMCE' id='btn_toggle' class="theBut-toggle"><input type='button' value='NoTinyMCE' id='btnno_toggle' class="theBut-toggle">
+        <form action="/page" method="post">
+            <div class="col-md-6 col-sm-12">
+                Html:<br>
+                <!-- Input code -->
+                <textarea rows="15" columns="40" class="consoleText notiny" name="contente" id="contente" type="text" placeholder="content here..."></textarea>
+                Javascript:<br>
+                <!-- Input Javascript -->
+                <textarea id="js" rows="15" columns="40" class="consoleText" type="tex/javascript" name="scripts" id="scripts" placeholder="javascript here..."></textarea>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                Css:<br>
+                <!-- Input css -->
+                <textarea id="css" rows="15" columns="40" class="consoleText" type="text" name="styles" id="styles" placeholder="css here..."></textarea>
+                Preview:
+                <iframe id="code" frameBorder="0"></iframe>
+
+                <!-- Create files -->
+                <button class="theBut" name="file" id="type" value="index">Create files</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="comp.js"></script>
+</body>
+</html>
