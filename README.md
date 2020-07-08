@@ -1,6 +1,6 @@
 Simple code editor using Express, NodeJs, TinyMCE with some email templates/snippets.
 
-Simply download or clone the repo and type npm install in you terminal.
+Simply download or clone the repo inside a new folder, open the folder you created in the terminal and type npm install.
 
 Open localhost:3000 in your browser and the fun will begin.
 
