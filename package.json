@@ -1,0 +1,17 @@
+{
+  "name": "content_gui",
+  "version": "1.0.0",
+  "description": "GUI Tool",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon ./app.js"
+  },
+  "author": "Fernando Fas",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.4.16",
+    "express": "^4.17.1",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}
