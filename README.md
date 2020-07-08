@@ -8,4 +8,4 @@ The editor gives the option to save the files which will be located in the folde
 
 For any suggestion of improvement please email fernandofas@gmail.com.
 
-Happe coding!!
+Happy coding!!
